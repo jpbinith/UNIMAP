@@ -1,0 +1,15 @@
+@import '../../theme.colors.scss';
+
+.footer {
+
+    bottom: 0;
+    position: fixed;
+    height: 30px;
+    text-align: center;
+    padding:10px;
+    display: inline-block;
+    width: 100%;
+    background-color: mat-color($app-primary);
+    margin-left: 0px;
+    margin-right: 0px;
+}
