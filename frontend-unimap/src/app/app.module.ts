@@ -6,6 +6,13 @@ import { StartComponent } from './components/start/start.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
+import {MatInputModule} from '@angular/material/input';
+import {MatIconModule, MatIcon} from '@angular/material/icon';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -21,8 +28,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-
-  
+    MatSidenavModule,
+    MatButtonModule,
+    MatCardModule,
+    MatInputModule,
+    MatIconModule,
+    MatFormFieldModule,
+    NgbModule  
   ],
   providers: [],
   bootstrap: [AppComponent]

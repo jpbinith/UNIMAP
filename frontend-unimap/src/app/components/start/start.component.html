@@ -1,1 +1,43 @@
-<p>start works!</p>
+<mat-drawer-container class="right">
+    <mat-drawer mode="side" opened class="sidenav"> <img src="assets/logoD.png" alt="Unimap" class="center">
+    </mat-drawer>
+
+
+    <mat-drawer-content class="right">
+
+        <div *ngIf="isTrue">
+            <mat-card class="card">
+
+                <p class="text">Welcome To</p>
+                <p class="text">UNIMAP STUDENT</p>
+                <p class="text">MANAGEMENT SYSTEM</p>
+                <button class="button" mat-raised-button (click)="onclick()">Log In To
+                    Proceed</button>
+
+
+            </mat-card>
+        </div>
+        <div *ngIf="isCard">
+            <mat-card class="card2">
+                <mat-card-title>Login</mat-card-title>
+                <mat-card-content>
+                    <form class="form">
+                        <mat-form-field>
+                            <input type="text" matInput placeholder="Username" required>
+                            <mat-icon matSuffix>person</mat-icon>
+                        </mat-form-field>
+                        <mat-form-field>
+                            <input matInput placeholder="Enter Password" type="password" required>
+                            <mat-icon matSuffix>vpn_key</mat-icon>
+                        </mat-form-field>
+                    </form>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button class="button" mat-raised-button (click)="onSubmit()">Login</button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </mat-drawer-content>
+
+
+</mat-drawer-container>

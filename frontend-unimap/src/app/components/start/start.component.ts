@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterLink } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-start',
@@ -7,9 +9,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StartComponent implements OnInit {
 
-  constructor() { }
+  isCard : boolean;
+  isTrue : boolean = true;
+
+  constructor(private router: Router) {
+    
+   }
+
 
   ngOnInit() {
+  }
+
+  public onclick(){
+    this.isCard = true;
+    this.isTrue = false;
+    console.log("true");
+  }
+
+  public onSubmit() {
+    
+    this.router.navigate(['/homepage']);
+    
   }
 
 }
